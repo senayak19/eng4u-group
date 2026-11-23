@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- EDIT: swap "Partner" for your partner's name (and the group name once you have one). -->
+  <title>Senay &amp; Partner · ENG4U</title>
+  <meta name="description" content="A Grade 12 English group site, told from inside Plato's cave. Two doors lead out to our two portfolios.">
+  <meta name="theme-color" content="#0e0c0a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap">
+  <link rel="preload" as="image" href="assets/rock.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+
+<!-- Shared shapes and light for both doorways (kept in one place so both doors match). -->
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="dayFill" cx="0.5" cy="0.66" r="0.78">
+      <stop offset="0" stop-color="#fffbf2"/>
+      <stop offset="0.42" stop-color="#fbefd2"/>
+      <stop offset="0.8" stop-color="#ecd5a3"/>
+      <stop offset="1" stop-color="#d8b67c"/>
+    </radialGradient>
+    <linearGradient id="spillFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcf1d6" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#fcf1d6" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#fcf1d6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="edgeBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+    <filter id="roughEdge" x="-10%" y="-5%" width="120%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="2" seed="11" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="spillBlur" x="-20%" y="-10%" width="140%" height="120%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+    <clipPath id="clipArchA"><path d="M7 200 L8.5 128 C7 96 9 70 16 50 C23 30 35 15 49 11 C61 8 74 14 83 27 C91 39 94 58 93.5 80 C93 104 92 130 93.5 160 L95 200 Z"/></clipPath>
+    <clipPath id="clipArchB"><path d="M5 200 L6 150 C5.5 118 7 88 13 64 C19 41 30 22 45 13 C56 7 70 9 80 20 C90 32 95 52 95.5 76 C96 104 94 136 95 168 L96.5 200 Z"/></clipPath>
+  </defs>
+</svg>
+
+<a class="skip" href="#the-two">Skip to who we are</a>
+
+<main>
+  <!-- ============ THE CAVE (first screen) ============ -->
+  <section class="cave" id="cave" aria-labelledby="group-name">
+    <div class="cave__wall" aria-hidden="true"></div>
+
+    <!-- Scratched into the wall: what we studied, plus a prisoner's tally. A light follows the pointer and picks them out. -->
+    <div class="cave__carvings" aria-hidden="true">
+      <span class="carve carve--hide-sm" style="--x:4%;  --y:12%; --r:-5deg; --s:1.25">Hamlet</span>
+      <span class="carve carve--italic carve--hide-sm" style="--x:3.5%; --y:21%; --r:3deg; --s:0.95">to be, or not to be</span>
+      <span class="carve carve--hide-sm" style="--x:39%; --y:9.5%; --r:-2deg; --s:0.9">the allegory of the cave</span>
+      <span class="carve carve--hide-sm" style="--x:62%; --y:7%; --r:5deg; --s:0.95">Superman</span>
+      <span class="carve carve--hide-sm" style="--x:75%; --y:12%; --r:3deg; --s:1.05">A Raisin in the Sun</span>
+      <span class="carve carve--hide-sm" style="--x:82%; --y:21%; --r:-3deg; --s:1.1">Thermopylae</span>
+      <svg class="tally" style="--x:23%; --y:9%; --r:-4deg; --xm:40%; --ym:72%" viewBox="0 0 120 40" aria-hidden="true">
+        <path d="M6 4 L7 36 M16 3 L15 37 M26 5 L27 35 M36 4 L35 36 M2 30 L42 9"/>
+        <path d="M58 5 L59 35 M68 4 L67 36 M78 6 L79 34 M88 4 L87 36 M54 29 L94 11"/>
+        <path d="M108 6 L109 34"/>
+      </svg>
+    </div>
+
+    <div class="cave__torch" aria-hidden="true"></div>
+
+    <header class="slate">
+      <p>ENG4U <span aria-hidden="true">·</span> Mr. Freitas</p>
+      <p>Chaminade College School <span aria-hidden="true">·</span> 2026–27</p>
+    </header>
+
+    <div class="cave__stage">
+
+      <!-- Door 1: Senay. EDIT: put Senay's PUBLISHED portfolio link in href and remove data-pending. -->
+      <a class="door door--a" href="#door-not-open" data-exit data-pending data-who="Senay" aria-label="Senay Aklilu's portfolio (link coming soon)">
+        <span class="door__name">Senay Aklilu</span>
+        <span class="door__frame">
+          <span class="door__halo" aria-hidden="true"></span>
+          <svg class="door__arch" viewBox="0 0 100 200" aria-hidden="true" focusable="false">
+            <g filter="url(#roughEdge)">
+              <path d="M7 200 L8.5 128 C7 96 9 70 16 50 C23 30 35 15 49 11 C61 8 74 14 83 27 C91 39 94 58 93.5 80 C93 104 92 130 93.5 160 L95 200 Z" fill="url(#dayFill)"/>
+              <path class="door__edge" d="M7 200 L8.5 128 C7 96 9 70 16 50 C23 30 35 15 49 11 C61 8 74 14 83 27 C91 39 94 58 93.5 80 C93 104 92 130 93.5 160 L95 200 Z" clip-path="url(#clipArchA)" filter="url(#edgeBlur)"/>
+            </g>
+          </svg>
+          <span class="door__motes" aria-hidden="true"></span>
+          <svg class="door__spill" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <polygon points="39,0 61,0 100,100 0,100" fill="url(#spillFill)" filter="url(#spillBlur)"/>
+          </svg>
+        </span>
+        <span class="door__label"><span class="door__label-text">Senay's portfolio</span> <span class="door__arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <figure class="projection" aria-labelledby="group-name">
+        <div class="projection__light" aria-hidden="true"></div>
+        <div class="projection__content">
+          <p class="projection__kicker">Grade 12 English, told from inside Plato's cave</p>
+          <!-- EDIT: the group name goes here once you have one. -->
+          <h1 class="projection__title" id="group-name">Senay <span class="amp">&amp;</span> <span class="todo">Partner</span></h1>
+          <div class="projection__shadows">
+            <!-- EDIT: shadows. Drop in a cut-out side-profile photo of each of you:
+                 <img class="shadow" src="assets/photos/shadow-senay.png" alt="">
+                 The CSS turns it into a soft black shadow, like the two heads at the bottom of the projection in our film. -->
+            <div class="slot slot--shadow" data-photo="shadow-senay.png">
+              <svg viewBox="0 0 120 140" aria-hidden="true"><path d="M60 16 C78 16 90 30 90 50 C90 64 84 75 76 81 L78 93 C100 99 116 112 120 140 L0 140 C4 112 20 99 42 93 L44 81 C36 75 30 64 30 50 C30 30 42 16 60 16 Z"/></svg>
+              <span>Photo: Senay</span>
+            </div>
+            <div class="slot slot--shadow" data-photo="shadow-partner.png">
+              <svg viewBox="0 0 120 140" aria-hidden="true"><path d="M60 16 C78 16 90 30 90 50 C90 64 84 75 76 81 L78 93 C100 99 116 112 120 140 L0 140 C4 112 20 99 42 93 L44 81 C36 75 30 64 30 50 C30 30 42 16 60 16 Z"/></svg>
+              <span>Photo: partner</span>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+      <!-- Door 2: partner. EDIT: put the partner's portfolio link in href, remove data-pending, and fix the names. -->
+      <a class="door door--b" href="#door-not-open" data-exit data-pending data-who="Partner" aria-label="Partner's portfolio (link coming soon)">
+        <span class="door__name"><span class="todo">Partner's name</span></span>
+        <span class="door__frame">
+          <span class="door__halo" aria-hidden="true"></span>
+          <svg class="door__arch" viewBox="0 0 100 200" aria-hidden="true" focusable="false">
+            <g filter="url(#roughEdge)">
+              <path d="M5 200 L6 150 C5.5 118 7 88 13 64 C19 41 30 22 45 13 C56 7 70 9 80 20 C90 32 95 52 95.5 76 C96 104 94 136 95 168 L96.5 200 Z" fill="url(#dayFill)"/>
+              <path class="door__edge" d="M5 200 L6 150 C5.5 118 7 88 13 64 C19 41 30 22 45 13 C56 7 70 9 80 20 C90 32 95 52 95.5 76 C96 104 94 136 95 168 L96.5 200 Z" clip-path="url(#clipArchB)" filter="url(#edgeBlur)"/>
+            </g>
+          </svg>
+          <span class="door__motes" aria-hidden="true"></span>
+          <svg class="door__spill" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <polygon points="39,0 61,0 100,100 0,100" fill="url(#spillFill)" filter="url(#spillBlur)"/>
+          </svg>
+        </span>
+        <span class="door__label"><span class="door__label-text">Partner's portfolio</span> <span class="door__arrow" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+
+    <div class="cave__prompt">
+      <p class="cave__prompt-main">Choose your way out.</p>
+      <p class="cave__prompt-sub">Each door opens one of our portfolios. Or <a href="#film">watch our film first</a>.</p>
+    </div>
+  </section>
+
+  <div class="deep">
+  <!-- ============ THE TWO PRISONERS ============ -->
+  <section class="section the-two" id="the-two" aria-labelledby="the-two-title">
+    <div class="section__inner">
+      <header class="section__head">
+        <h2 id="the-two-title">The two prisoners</h2>
+        <p>We play them in our film, too.</p>
+      </header>
+
+      <div class="people">
+        <article class="person">
+          <!-- EDIT: replace the slot with <img class="portrait" src="assets/photos/senay.jpg" alt="Senay standing in a doorway"> (it gets the same arch shape) -->
+          <div class="slot slot--portrait" data-photo="senay.jpg">
+            <svg class="slot__arch" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M4 100 L4.6 50 C4.8 23 24 4.5 50 3.5 C76 4.5 95.5 22 95.4 48 L96 100 Z"/></svg>
+            <span class="slot__title">Photo: Senay</span>
+            <span class="slot__idea">Idea: stand in a doorway, tunnel or underpass with daylight behind you, so you're half silhouette.</span>
+          </div>
+          <h3>Senay Aklilu</h3>
+          <p class="person__line">Grade 12, Chaminade College School. AP program and the ICT Specialist High Skills Major.</p>
+          <a class="person__link" href="#door-not-open" data-exit data-pending data-door="a" data-who="Senay">Open Senay's portfolio <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="person">
+          <!-- EDIT: replace the slot with <img class="portrait" src="assets/photos/partner.jpg" alt="..."> -->
+          <div class="slot slot--portrait" data-photo="partner.jpg">
+            <svg class="slot__arch" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M4 100 L4.6 50 C4.8 23 24 4.5 50 3.5 C76 4.5 95.5 22 95.4 48 L96 100 Z"/></svg>
+            <span class="slot__title">Photo: partner</span>
+            <span class="slot__idea">Same spot and light as Senay's, so the two photos read as a pair.</span>
+          </div>
+          <h3><span class="todo">Partner's name</span></h3>
+          <p class="person__line"><span class="todo">One line about your partner: grade, school, program.</span></p>
+          <a class="person__link" href="#door-not-open" data-exit data-pending data-door="b" data-who="Partner">Open <span class="todo">Partner</span>'s portfolio <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE FILM ============ -->
+  <section class="section film" id="film" aria-labelledby="film-title">
+    <div class="section__inner">
+      <header class="section__head">
+        <h2 id="film-title">The film</h2>
+        <p>Our ISU film opens in the cave and ends at a doorway like the two above.</p>
+      </header>
+
+      <blockquote class="epigraph">
+        <p>“At first, when any of them is liberated and compelled suddenly to stand up and turn his neck round and walk and look towards the light, he will suffer sharp pains; the glare will distress him.”</p>
+        <footer>Plato, <cite>The Republic</cite>, Book VII <span class="epigraph__trans">(trans. Benjamin Jowett)</span></footer>
+      </blockquote>
+
+      <figure class="screen">
+        <div class="screen__frame">
+          <div class="screen__light" aria-hidden="true"></div>
+          <!-- EDIT: when the film is on YouTube (unlisted is fine), replace the slot below with:
+               <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Our ENG4U film" loading="lazy"
+                       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe> -->
+          <div class="slot slot--film" data-photo="film">
+            <span class="slot__title">Film goes here</span>
+            <span class="slot__idea">Upload it to YouTube as unlisted and send the link. Until then, a still from the cave scene works as a poster.</span>
+          </div>
+        </div>
+        <figcaption>By Senay Aklilu and <span class="todo">Partner</span>. Made in Blender, with AI-assisted video.</figcaption>
+      </figure>
+    </div>
+  </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <a href="#cave" class="foot__back">Back into the cave <span aria-hidden="true">↑</span></a>
+  <p>Senay Aklilu &amp; <span class="todo">Partner</span> <span aria-hidden="true">·</span> ENG4U, Mr. Freitas <span aria-hidden="true">·</span> 2026–27</p>
+</footer>
+
+<!-- The white-out you walk into when you pick a door. -->
+<div class="whiteout" aria-hidden="true">
+  <svg class="whiteout__arch" viewBox="0 0 100 200" preserveAspectRatio="none"><path d=""/></svg>
+  <div class="whiteout__flash"></div>
+</div>
+
+<div class="not-open" id="door-not-open" role="dialog" aria-modal="true" aria-labelledby="not-open-title" hidden>
+  <p class="not-open__title" id="not-open-title">This door isn't open yet.</p>
+  <p class="not-open__body"><span data-who-slot>This</span> portfolio link still needs to be added.</p>
+  <button type="button" class="not-open__back">Back into the cave</button>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+</body>
+</html>
