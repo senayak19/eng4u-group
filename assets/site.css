@@ -312,7 +312,7 @@ a { color: inherit; }
   position: relative;
   padding: clamp(80px, 12vw, 168px) var(--gutter);
 }
-.film { padding-top: clamp(40px, 6vw, 80px); }
+.podcast { padding-top: clamp(40px, 6vw, 80px); }
 .section__inner { max-width: 1120px; margin-inline: auto; }
 
 .section__head h2 {
@@ -445,6 +445,35 @@ a { color: inherit; }
 .slot--film .slot__title { color: var(--shadow-ink); }
 .slot--film .slot__idea { max-width: 40ch; }
 .screen figcaption { margin-top: 1.1rem; font-size: 0.88rem; color: var(--bone-dim); }
+
+/* --- what we read this year --- */
+.read { margin-top: clamp(72px, 9vw, 128px); }
+.read h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+  line-height: 1.1;
+}
+.read__units {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 64px);
+  margin-top: clamp(24px, 3vw, 40px);
+}
+.read__unit { border-top: 1px solid rgba(235, 227, 211, 0.16); padding-top: 1rem; }
+.read__label {
+  margin: 0 0 0.8rem;
+  font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--bone-dim);
+}
+.read ul { margin: 0; padding: 0; list-style: none; }
+.read li {
+  font-family: var(--display);
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  line-height: 1.3;
+  padding: 0.22rem 0;
+}
+.read cite { font-style: italic; }
 
 /* --- footer --- */
 .foot {
@@ -591,6 +620,7 @@ a { color: inherit; }
   .cave__prompt-sub { font-size: 0.82rem; }
 
   .people { grid-template-columns: 1fr; }
+  .read__units { grid-template-columns: 1fr; gap: 28px; }
   .person:nth-child(2) { margin-top: 0; }
   .foot { flex-direction: column; align-items: flex-start; }
 }
